@@ -1,0 +1,485 @@
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+
+
+}
+
+ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+li {
+     cursor: pointer;
+     transition: color .4s;
+}
+
+li:hover {
+     color: #ff4A52;
+}
+
+a {
+     text-decoration: none;
+     transition: color .4s;
+}
+
+a:hover {
+     color: #ff4A52;
+}
+
+input {
+     outline: none;
+     border-radius: 5px;
+     color: black;
+}
+
+button {
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     color: #fff;
+     font-family: "Rubik", sans-serif;
+     cursor: pointer;
+}
+
+img {
+     width: 100%;
+     height: auto;
+}
+
+.primary-color {
+     background-color: #1EC6B6;
+     transition: 0.5s;
+}
+
+.primary-color:hover {
+     background-color: #ff4A52;
+}
+
+.second-color {
+     background-color: #ff4A52;
+     transition: color 0.5s;
+}
+
+.second-color:hover {
+     background-color: #ff4A52;
+}
+
+.d-flex {
+     display: flex;
+}
+
+.w-100 {
+     width: 100%;
+}
+
+.w-50 {
+     width: 50%;
+}
+
+.row {
+     width: 100%;
+     display: flex;
+}
+
+.font-15 {
+     font-size: 15px;
+}
+
+/* /////////////////////////////////// header ////////////////////////////// */
+header {
+     background-color: #ffff;
+     justify-content: space-around;
+     padding: 25px 0px;
+     position: relative;
+}
+
+nav ul {
+     display: none;
+}
+
+.active-menu {
+     display: inline-block;
+     margin-top: 50px;
+}
+
+.active-menu li {
+     border-bottom: rgba(0, 0, 0, 0.541) 1px solid;
+}
+
+.active-menuIcon {
+     bottom: 150px;
+}
+
+.active-searchIcon {
+     bottom: 150px;
+}
+
+
+nav ul li {
+     color: #000;
+
+     font-size: 1.3em;
+     margin-top: 13px;
+     margin-right: 30px;
+}
+
+.search-icon {
+
+     align-items: center;
+     justify-content: center;
+}
+
+.search-icon a {
+     color: black !important;
+}
+
+.drop-down-menu {
+     align-items: center;
+     justify-content: center;
+}
+
+.drop-down-menu a {
+     color: black !important;
+}
+
+/* /////////////////////slider//////////////////////// */
+.slider {
+     background: url(../img/banner2.png) no-repeat;
+     background-size: cover;
+     height: 50vw;
+     /* background-attachment: fixed; */
+}
+
+.slider-text {
+     height: 45vw;
+     color: #fff;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+}
+
+.slider-text h3 {
+     font-size: 8vw;
+     font-family: "nothing you could Do", cursive;
+     font-weight: 400;
+     line-height: 10vw;
+}
+
+.slider-text p {
+     font-size: 2.5vw;
+     font-weight: 400;
+}
+
+.slider-btn {
+     padding: 1vw 1.5vw;
+     font-size: 1.7vw;
+}
+
+.slider-btn a {
+     color: #fff;
+}
+
+/* //////////////////////////////////search-bar//////////////////////////// */
+.search-bar {
+     background-color: #040E27;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px 25px;
+}
+
+.search-bar h3 {
+     color: #fff;
+     font-weight: 400;
+     font-size: 20px;
+}
+
+.search-bar input {
+     background-color: transparent;
+     border: 1px solid #363E52;
+     color: #fff;
+     margin: 10px;
+     padding: 17px 10px;
+     width: 100%;
+     font-size: 16px;
+
+}
+
+.search-bar button {
+     padding: 17px 39px;
+     font-size: 16px;
+     font-weight: 500;
+}
+
+.search-form {
+     flex-direction: column;
+     align-items: center;
+     width: 80%;
+}
+
+/* ///////////////////////////////popular//////////////////// */
+/* .popular{
+     flex-direction: column;
+} */
+.popular-heading {
+     flex-direction: column;
+     align-items: center;
+     margin: 100px 0;
+     text-align: center;
+}
+
+.popular-heading h3 {
+     color: #040E27;
+     font-size: 38px;
+     font-weight: 400;
+}
+
+.popular-heading p {
+     color: #7A838B;
+     font-size: 17px;
+     margin: 10px;
+     margin-top: 20px;
+}
+
+.popular-content {
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.popular-content article {
+     margin: 10px;
+     cursor: pointer;
+     transition: transform 0.4s;
+     position: relative;
+}
+
+.popular-content article:before {
+     background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 99%;
+     width: 100%;
+     z-index: 1000;
+     border-radius: 5px;
+}
+
+.popular-content article:hover {
+     transform: translateY(-10px);
+}
+
+article img {}
+
+article .popular-info {
+     color: #fff;
+     position: absolute;
+     font-size: 22px;
+     font-weight: 400;
+     bottom: 30px;
+     left: 30px;
+     z-index: 1111;
+     transition: color 0.4s;
+}
+
+
+.popular-info a {
+     color: #fff;
+     border-radius: 30px;
+     font-size: 12px;
+     padding: 7px 12px;
+     margin-left: 10px;
+
+}
+
+.popular-content article:hover .popular-info {
+     color: #ff4A52;
+}
+
+.popular-content article:hover .popular-info a {
+     background-color: #ff4A52;
+}
+
+/* //////////////////////////////news/////////////////////////// */
+.newsletter {
+     margin: 10px 0;
+     height: 250px;
+     background: url(../img/newsletter.png) no-repeat;
+     background-position: 60% 60%;
+     background-size: cover;
+     position: relative;
+     z-index: 100;
+}
+
+.newsletter::before {
+     position: absolute;
+     top: 0;
+     left: 0;
+     content: "";
+     background-color: #040E27;
+     opacity: .7;
+     height: 100%;
+     width: 100%;
+}
+
+.newsletter-content {
+     flex-direction: column;
+     z-index: 200;
+     align-items: center;
+}
+
+.newsletter-text {
+     color: #fff;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     margin-top: 25px;
+}
+
+.newsletter-text h4 {
+     font-size: 24px;
+     margin-bottom: 10px;
+}
+
+.newsletter-text p {
+     font-size: 12px;
+     font-weight: 400;
+     color: #AAB1B7;
+     margin-bottom: 7px;
+}
+
+
+.newsletter-form {
+     flex-direction: column;
+}
+
+.newsletter input {
+     background-color: #fff;
+     color: black;
+     border: none;
+     width: 40vw;
+     padding: 15px 0px 15px 10px;
+     margin-bottom: 10px;
+     font-size: 16px;
+     font-weight: 300;
+}
+
+.newsletter button {
+
+     padding: 17px 12px;
+     text-align: center;
+}
+
+/* ////////////////////////////////video///////////// */
+.video {
+     background: url(../img/video.png);
+     background-size: cover;
+     background-position: center center;
+     padding: 130px 0;
+     position: relative;
+     margin: 10px 0;
+     position: relative;
+}
+
+.video::before {
+     position: absolute;
+     top: 0;
+     left: 0;
+     content: "";
+     background-color: #040E27;
+     opacity: .2;
+     height: 100%;
+     width: 100%;
+     z-index: 100;
+}
+
+.video-content {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     z-index: 1000;
+     position: relative;
+}
+
+.video-content h3 {
+     color: #fff;
+     font-size: 8vw;
+     font-family: "nothing you could Do", cursive;
+     font-weight: 400;
+     line-height: 10vw;
+     margin-bottom: 30px;
+}
+
+.video-content a {
+     color: #fff !important;
+}
+
+.play-btn {
+     color: #fff !important;
+     padding: 30px;
+     border-radius: 50%;
+     font-size: 18px;
+     height: 85px;
+     width: 85px;
+}
+
+
+/* //////////////////////////////footer///////////// */
+footer {
+     flex-direction: column;
+     background-color: #040E27;
+     padding: 30px ;
+     
+     align-items: flex-start;
+     
+}
+
+footer h3 {
+     color: #fff;
+}
+
+.footer-left li {
+     color: #AAB1B7 !important;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 25px;
+}
+
+.footer-left li a {
+     color:  #AAB1B7 !important;
+}
+
+/* .footer-left img {
+     width: 60px;
+} */
+
+.footer-right {
+     margin-top: 30px;
+}
+
+.footer-title {
+     font-size: 22px;
+     font-weight: 400;
+     font-family: "Rubik", sans-serif;
+}
+
+.footer-link li {
+     width: 50%;
+     float: left;
+     font-size: 14px;
+     line-height: 35px;
+}
+.footer-link li a{
+     color: #AAB1B7;
+     font-weight: 400;
+     font-family: "Rubik", sans-serif;
+}

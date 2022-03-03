@@ -1,0 +1,112 @@
+@media (min-width: 576px) {
+     .nav li {
+          display: inline-block !important;
+     }
+
+     .search-icon {
+          position: absolute;
+          width: 50px;
+          right: 50px;
+          top: 0;
+          bottom: 0;
+          background-color: #ff4A52;
+     }
+
+     .drop-down-menu {
+          position: absolute;
+          width: 50px;
+          background-color: #1EC6B6;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 1000;
+     }
+
+     .search-icon a {
+          color: white !important;
+     }
+
+     .active-menuIcon {
+          bottom: 208px !important;
+     }
+
+     .active-searchIcon {
+          bottom: 208px !important;
+     }
+
+     /* ///////////////////////////////////////////// */
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+     nav li {
+          display: inline-block !important;
+     }
+
+     nav ul {
+          display: block;
+     }
+
+     .active-searchIcon {
+          bottom: 0px !important;
+     }
+
+     .drop-down-menu {
+          display: none;
+     }
+
+     /* ///////////////////////////////////////////// */
+
+     footer {
+          flex-direction: row;
+          background-color: #040E27;
+          padding: 30px;
+          justify-content: space-evenly;
+          align-items: center;
+        justify-content: space-evenly;
+     }
+
+
+     .footer-right {
+          margin-top: 0px;
+     }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     .search-icon {
+          width: 100px;
+     }
+
+     .search-bar {
+          flex-direction: row;
+          justify-content: center;
+     }
+
+     .search-form {
+          flex-direction: row;
+          justify-content: center;
+     }
+
+     /* ///////////////////////////////////////////// */
+     .newsletter-content {
+          flex-direction: row;
+          justify-content: center;
+     }
+
+     .newsletter-form {
+          flex-direction: row;
+          display: block;
+     }
+
+     .newsletter-text {
+          margin: 0 10px 0 0;
+     }
+
+
+}
